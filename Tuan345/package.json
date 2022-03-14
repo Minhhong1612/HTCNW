@@ -1,0 +1,13 @@
+{
+    "name": "layout-table-admin-page",
+    "version": "1.0.0",
+    "description": "Demonstrates a layout with table",
+    "main": "thuongki1_tablelayou.html",
+    "scripts": {
+      "start": "serve"
+    },
+    "author": "CodeSchool VN",
+    "devDependencies": {
+      "serve": "^11.2.0"
+    }
+  }

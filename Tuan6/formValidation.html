@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js"></script>
+    <title>VALIDATION</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">ĐĂNG KÝ TÀI KHOẢN</h2>
+    <form name="form1" onsubmit="SubmitForm();" method="post" action="#">
+        <!-- ======================= TÊN ĐĂNG NHẬP ========================== -->
+        <div>
+            <label for="txtDN" class="title">Tên đăng nhập:</label>
+            <input id="txtDN" onblur="return KiemTraTenDN();" type="text" name="txtDN" size="30" placeholder="txtDN">
+            <span id="tendn">*</span>
+        </div>
+        <!-- END -->
+        <!-- ======================= MẬT KHẨU ========================== -->
+
+        <div>
+            <label for="txtMK" class="title">Mật khẩu:</label>
+            <input id="txtMK" onblur="return KiemTraPassWord();" type="password" name="txtMK" size="30"
+                placeholder="txtMK">
+            <span id="mk">*</span>
+        </div>
+        <!-- end  -->
+        <!-- ======================= NHẬP LẠI MẬT KHẨU ========================== -->
+
+        <div>
+            <label for="txtXNMK" class="title">Nhập lại mật khẩu:</label>
+            <input id="txtXNMK" onblur="return KiemTraXacNhanPassWord();" type="password" name="txtXNMK" size="30"
+                placeholder="txtXNMK">
+            <span id="xnmk">*</span>
+        </div>
+        <!-- end  -->
+
+        <!-- ======================= THÔNG TIN CÁ NHÂN ========================== -->
+        <h5 style="text-align: center;">THÔNG TIN CÁ NHÂN</h5>
+        <!-- ------------------ Họ và tên -------------------- -->
+        <div>
+            <label for="txtName" class="title">Họ và tên:</label>
+            <input id="txtName" type="text" name="txtName" size="30" placeholder="txtName">
+            <span id="hoten">*</span>
+        </div>
+        <!-- end  -->
+        <!-- ------------------ Ngày sinh -------------------- -->
+
+        <div>
+            <label for="txtNS" class="title">Tên đăng nhập:</label>
+            <input id="txtNS" type="date" name="txtNS" size="30" placeholder="txtNS" onblur="return KiemTraNgaySinh();">
+            <span id="ngaysinh">*</span>
+        </div>
+        <!-- end  -->
+        <!-- ------------------ Giới tính -------------------- -->
+
+        <div class="radio-buttons">
+            <span class="title">Giới tính:</span>
+            <input type="radio" name="gender" id="male" value="M" checked>
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" value="F" checked>
+            <label for="female">Nữ</label>
+        </div>
+        <!-- end  -->
+        <!-- ------------------ Địa chỉ -------------------- -->
+
+        <div>
+            <label for="txtDC" class="title">Địa chỉ:</label>
+            <input id="txtDC" onblur="return KiemTraTenDN();" type="text" name="txtDC" size="30" placeholder="txtDC">
+            <span id="diachi">*</span>
+        </div>
+        <!-- end  -->
+        <div>
+            <label for="txtDT" class="title">Điện thoại:</label>
+            <input id="txtDT" onblur="return KiemTraTenDN();" type="text" name="txtDT" size="30" placeholder="txtDT">
+            <span id="dienthoai"> Phải là số</span>
+        </div>
+        <div>
+            <label for="txtEmail" class="title">Email:</label>
+            <input id="txtEmail" onblur="return KiemTraTenDN();" type="email" name="txtEmail" size="30"
+                placeholder="txtEmail">
+            <span id="dienthoai"> Nhập đúng địa chỉ email</span>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Đăng ký" id="submit">
+            <input type="reset" value="Hủy" id="submit">
+
+        </div>
+    </form>
+</body>
+
+</html>

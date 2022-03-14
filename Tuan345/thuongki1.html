@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: auto;}
+        .wrapper{height: 400px;width: 898px;background-color: aliceblue;}
+        .content{height: 300px;width: 70%;background-color: antiquewhite;float: right;}
+        header{height: 100px;width: 100%;background-color: rgb(142, 161, 179)}
+        nav{height: 300px;width: 30%;background-color: aqua;float: left;}
+        .menu li{height: 50px;width: 78px;background-color: aquamarine;}
+        /*section{height: 300px;width: 100%;background-color: rgb(190, 153, 97);}*/
+        article{margin-left: 50px;margin-right: 50px;margin-top: 30px;margin-bottom:  30px;height: 240px;background-color: brown;}
+        a{ color: rgb(228, 52, 21);font-weight: bold;font-size: larger;text-decoration: none;}
+        .menu li:hover{background-color: rgb(255, 238, 0);}
+        li:hover>a{ color: rgb(172, 7, 84);}
+        .menu li .submenu{display: none;float: left;}
+        .menu li:hover>.submenu{display: block;}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header><p style="text-align: center;font-size: 25px;">Header</p></header>
+        <nav>
+                <ul class="menu">
+                    <li><a href="">menu 1</a></li>
+                    <li><a href="">menu 2</a></li>
+                    <li><a href="">menu 3</a></li>
+                    <li><a href="">menu 4</a></li>
+                    <li><a href="">menu 5</a>
+                        <ul class="submenu">
+                            <li><a href="">menu 5.1</a></li>
+                            <li><a href="">menu 5.2</a></li>
+                            <li><a href="">menu 5.3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+         <div class="content">
+          
+            <article><p style="font-size: 20;text-align: center;">content</p></article>
+           
+         </div>  
+        
+</body>
+</html>
